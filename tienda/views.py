@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def vertienda(request):
+    return render(request, 'tienda/vertienda.html', {})
