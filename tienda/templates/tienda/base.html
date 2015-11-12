@@ -2,11 +2,14 @@
 <html>
         <head>
             <title> Abarroteria</title>
+            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
             <link rel="stylesheet" href="{% static 'css/tienda.css' %}">
             <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
         </head>
         <body>
           <div class="page-header">
+            <a href="{% url 'tienda.views.nuevaventa' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
             <h3>Abarroteria de Marce</h3>
           </div>
 
