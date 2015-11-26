@@ -16,7 +16,6 @@ def nuevaventa(request):
         form = Pubform(request.POST)
         if form.is_valid():
             post = form.save(commit=False)
-            post.producto = request.producto
             post.save()
             return redirect('tienda.views.detalleproducto', pk=post.pk)
     else:
